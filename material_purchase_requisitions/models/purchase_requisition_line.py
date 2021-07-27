@@ -24,6 +24,7 @@ class MaterialPurchaseRequisitionLine(models.Model):
     )
     qty = fields.Float(
         string='Cantidad',
+        digits=(16,6),
         default=1,
         required=True,
     )
