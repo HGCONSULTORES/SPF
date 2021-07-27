@@ -8,7 +8,7 @@ class HrEmployee(models.Model):
 
     dest_location_id = fields.Many2one(
         'stock.location',
-        string='Destination Location',
+        string='Locación Destino',
         groups='hr.group_hr_user'
     )
 
