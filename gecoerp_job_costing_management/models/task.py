@@ -22,8 +22,9 @@ class MaterialPlanning(models.Model):
     description = fields.Char(
         string='Descripción'
     )
-    product_uom_qty = fields.Integer(
-        'Quantity',
+    product_uom_qty = fields.Float(
+        string='Cantidad',
+        digits=(16,6),
         default=1.0
     )
     product_uom = fields.Many2one(
@@ -56,7 +57,8 @@ class ConsumedMaterial(models.Model):
         string='Descripción'
     )
     product_uom_qty = fields.Integer(
-        'Quantity',
+        string='Cantidad',
+        digits=(16,6),
         default=1.0
     )
     product_uom = fields.Many2one(
