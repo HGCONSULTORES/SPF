@@ -29,11 +29,11 @@ class MaterialPlanning(models.Model):
     )
     product_uom = fields.Many2one(
         'uom.uom',
-        'Unit of Measure'
+        'Unidad de Medida'
     )
     material_task_id = fields.Many2one(
         'project.task',
-        'Material Plan Task'
+        'Material Planeado'
     )
 
 
@@ -63,11 +63,11 @@ class ConsumedMaterial(models.Model):
     )
     product_uom = fields.Many2one(
         'uom.uom',
-        'Unit of Measure'
+        'Unidad de Medida'
     )
     consumed_task_material_id = fields.Many2one(
         'project.task',
-        string='Material Consumido y planeado en Tareas'
+        string='Material Consumido y planeado'
     )
 
 
