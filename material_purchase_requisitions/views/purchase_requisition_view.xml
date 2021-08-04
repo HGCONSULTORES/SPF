@@ -12,7 +12,7 @@
                         <button name="manager_approve" type="object" string="Aprobación del Departamento" states="dept_confirm,cancel" class="btn-primary" groups="material_purchase_requisitions.group_purchase_requisition_department"/>
                         <button name="user_approve" type="object" string="Aprovar" states="ir_approve" class="btn-primary" groups="material_purchase_requisitions.group_purchase_requisition_user"/>
                         <button name="request_stock" type="object" string="Crear Pickin de la Orden de Compra" states="approve" class="btn-primary" groups="material_purchase_requisitions.group_purchase_requisition_user"/>
-                        <button name="action_received" type="object" string="Recivido" states="stock" class="btn-primary"/>
+                        <button name="action_received" type="object" string="Recibido" states="stock" class="btn-primary"/>
                         <button name="requisition_reject" type="object" string="Rechazar" groups="material_purchase_requisitions.group_purchase_requisition_department,material_purchase_requisitions.group_purchase_requisition_user" states="dept_confirm,approve,ir_approve" />
                         <button name="action_cancel" type="object" states="Borrador" string="Cancelar" groups="base.group_user"/>
                         <button name="reset_draft" type="object" string="Restablece a BorradorReset to Draft" states="cancel,reject,receive" class="btn-primary"/>
@@ -63,7 +63,7 @@
                                     <field name="reason" attrs="{'readonly': [['state', 'in', ['reject','cancel','receive']]]}" placeholder="Add Reason for Internal Requistion ...."/>
                                 </group>
                             </page>
-                            <page groups="material_purchase_requisitions.group_purchase_requisition_user,stock.group_stock_user" string="Detalle de Picking" attrs="{'readonly': [['state', 'in', ['done']]]}">
+                            <page groups="material_purchase_requisitions.group_purchase_requisition_user,stock.group_stock_user" string="Picking" attrs="{'readonly': [['state', 'in', ['done']]]}">
                                 <group>
                                     <group>
                                             <field name="location_id"

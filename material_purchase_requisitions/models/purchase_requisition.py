@@ -16,7 +16,6 @@ class MaterialPurchaseRequisition(models.Model):
             if rec.state not in ('draft', 'cancel', 'reject'):
                 raise UserError(
                     _('You can not delete Purchase Requisition which is not in draft or cancelled or rejected state.'))
-        #                raise Warning(_('You can not delete Purchase Requisition which is not in draft or cancelled or rejected state.'))
         return super(MaterialPurchaseRequisition, self).unlink()
 
     name = fields.Char(
@@ -30,7 +29,7 @@ class MaterialPurchaseRequisition(models.Model):
         ('ir_approve', 'Esperando Aprovación'),
         ('approve', 'Aprovado'),
         ('stock', 'Orden de Compra Creada'),
-        ('receive', 'Recivido'),
+        ('receive', 'Recibido'),
         ('cancel', 'Cancelado'),
         ('reject', 'Rechazado')],
         default='draft',

@@ -14,8 +14,7 @@
     """,
     'author': 'MASTER CONSULTING RESOURCES & CO. S.C.',
     'website': 'http://www.gecoerp.com',
-    'support': 'contact@gecoerp.com',
-    'images': ['static/description/img1.jpeg'],
+    'support': 'contacto@gecoerp.com',
     'category': 'Warehouse',
     'depends': ['stock', 'hr', 'purchase', ],
     'data':[

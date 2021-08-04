@@ -48,7 +48,7 @@
                                </tr>
                                <tr style="border: 2px solid black;">
                                    <td><strong>Gerente de Departamento</strong></td><td> <span t-field="doc.approve_manager_id"/></td>
-                                   <td><strong>FEcha de Aprobación del Departamento</strong></td><td> <span t-field="doc.managerapp_date"/></td>
+                                   <td><strong>Fecha de Aprobación del Departamento</strong></td><td> <span t-field="doc.managerapp_date"/></td>
                                </tr>
                                <tr style="border: 2px solid black;">
                                    <td><strong>Aprovado Por</strong></td><td> <span t-field="doc.approve_employee_id"/></td>
@@ -59,7 +59,7 @@
                                    <td><strong>Fecha de Rechazo</strong></td><td> <span t-field="doc.userreject_date"/></td>
                                </tr>
                             </table>
-                            <strong><h3>Detalle de Picking</h3></strong>
+                            <strong><h3>Picking</h3></strong>
                             <table class="table table-responsive">
                                <tr style="border: 2px solid black;">
                                    <td><strong>Ubicación de Origen</strong></td><td> <span t-field="doc.location_id.name"/></td>
@@ -81,7 +81,7 @@
                             <strong><h3>Requisiciones</h3></strong>
                             <table class="table table-responsive">
                                <tr style="border: 2px solid black;">
-                                    <td><strong>Accion de Solicitud</strong></td>
+                                    <td><strong>Acción de Solicitud</strong></td>
                                     <td><strong>Producto</strong></td>
                                     <td><strong>Descripción</strong></td>
                                     <td><strong>Cantidad</strong></td>

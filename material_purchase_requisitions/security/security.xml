@@ -48,8 +48,6 @@
                                         (4, ref('purchase.group_purchase_user')),
                                         (4, ref('material_purchase_requisitions.group_purchase_requisition_department'))]"/>
         </record>
-        
-        
 
     </data>
 </odoo>

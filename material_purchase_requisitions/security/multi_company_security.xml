@@ -6,7 +6,6 @@
             <field name="name">Muterial Purchase Requisition multi-company</field>
             <field name="model_id" ref="model_material_purchase_requisition"/>
             <field name="global" eval="True"/>
-            <!--<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>-->
             <field name="domain_force">['|',('company_id','=',False),('company_id','in', company_ids)]</field>
         </record>
 
@@ -14,7 +13,6 @@
             <field name="name">Muterial Purchase Requisition Line multi-company</field>
             <field name="model_id" ref="model_material_purchase_requisition_line"/>
             <field name="global" eval="True"/>
-            <!--<field name="domain_force">['|',('requisition_id.company_id','=',False),('requisition_id.company_id','child_of',[user.company_id.id])]</field>-->
             <field name="domain_force">['|',('requisition_id.company_id','=',False),('requisition_id.company_id','in',company_ids)]</field>
         </record>
 
