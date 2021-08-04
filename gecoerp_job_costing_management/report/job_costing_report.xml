@@ -17,9 +17,9 @@
         <field name="header_spacing">50</field>
         <field name="dpi">90</field>
     </record>
-   
+
    <record id="job_costing_report" model="ir.actions.report">
-        <field name="name">Costo de Trabajo</field>
+        <field name="name">Reporte de Costo de Trabajo</field>
         <field name="model">job.costing</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">gecoerp_job_costing_management.report_job_costing</field>
@@ -148,8 +148,8 @@
                                         <th>Referencia</th>
                                         <th class="text-right">Cantidad</th>
                                         <th class="text-right">Costo Unitario</th>
-                                        <th class="text-right">Cantidad Comprada</th>
-                                        <th class="text-right">Cantidad Facturada</th>
+                                        <th class="text-right">Cnt. Comprada</th>
+                                        <th class="text-right">Cnt. Facturada</th>
                                         <th class="text-right">Total</th>
                                     </tr>
                                 </thead>
@@ -251,8 +251,8 @@
                                         <th>Base</th>
                                         <th class="text-right">Cantidad</th>
                                         <th class="text-right">Costo Unitario</th>
-                                        <th class="text-right">Cantidad Comprada</th>
-                                        <th class="text-right">Cantidad Facturada</th>
+                                        <th class="text-right">Cnt. Comprada</th>
+                                        <th class="text-right">Cnt. Facturada</th>
                                         <th class="text-right">Total</th>
                                     </tr>
                                 </thead>

@@ -21,11 +21,11 @@
     'currency': 'MXN',
     'summary': """Este modulo permite la administracion de obras y costos de servicios y materiales""",
     'description': """
-   Administraciónn de Obras
-""",
+     Administraciónn de Obras
+     """,
     'author': "MASTER CONSULTING RESOURCES & CO. S.C.",
     'website': "https://www.gecoerp.com",
-    'support': 'contact@gecoerp.com',
+    'support': 'contacto@gecoerp.com',
     'images': ['static/description/img1.jpeg'],
     'data':[
             'security/construction_security.xml',

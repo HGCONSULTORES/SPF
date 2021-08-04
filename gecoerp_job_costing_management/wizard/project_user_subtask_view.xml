@@ -9,7 +9,7 @@
                         <span class="o_form_label">This wizard will create subtasks of current task.</span>
                         <group>
                             <field name="subtask_user_ids" nolabel="1" widget="one2many_list">
-                                <tree string="Proejct Subtask" editable="bottom">
+                                <tree string="Subtareas de Projecto" editable="bottom">
                                     <field name="user_id"/>
                                     <field name="name"/>
                                     <field name="description"/>

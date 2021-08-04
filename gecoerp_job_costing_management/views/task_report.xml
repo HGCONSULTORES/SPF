@@ -17,7 +17,7 @@
                                 <th>Cliente </th>
                                 <th>Asignado a </th>
                                 <th>Fecha de Asignación </th>
-                                <th>Plazo</th>
+                                <th>Plazo </th>
                             </tr>
                             <tr>
                                 <td><span t-field="doc.project_id.name"/></td>
@@ -28,14 +28,14 @@
                             </tr>
                          </table>
                          <t t-if="doc.timesheet_ids">
-                             <h3>Hoja de Tiempos</h3>
+                             <h3>Hoja de Tiempos </h3>
                              <table class="table table-responsive" name="table_2">
                                 <tr>
-                                    <th>Fecha</th>
-                                    <th>Usuario</th>
-                                    <th>Descripción</th>
-                                    <th>Centro de Costo</th>
-                                    <th>Duración</th>
+                                    <th>Fecha </th>
+                                    <th>Usuario </th>
+                                    <th>Descripción </th>
+                                    <th>Centro de Costo </th>
+                                    <th>Duración </th>
                                 </tr>
                                 <t t-foreach="doc.timesheet_ids" t-as="time">
                                     <tr>
@@ -49,9 +49,9 @@
                              </table>
                              <div class="row">
                                  <div class="col-xs-10 text-right">
-                                     <span>Horas Planeadas :</span><br/>
-                                     <span>Horas Aplicadas :</span><br/>
-                                     <span>horas Restantes :</span><br/>
+                                     <span>Horas Planeadas : </span><br/>
+                                     <span>Horas Aplicadas : </span><br/>
+                                     <span>Horas Restantes : </span><br/>
                                  </div>
                                  <div class="col-xs-2 text-right">
                                      <span t-field="doc.planned_hours"/><br/>
@@ -60,16 +60,17 @@
                                  </div>
                              </div>
                          </t>
+                         <br/>
                          <t t-if="doc.child_task_ids">
-                             <h3>Subtareas</h3>
+                             <h3>Subtareas </h3>
                              <table class="table table-responsive" name="table_3">
                                 <tr>
-                                    <th>Tarea</th>
-                                    <th>Proyecto</th>
-                                    <th>Asignado a</th>
-                                    <th>Horas Iniciales Planeadas</th>
-                                    <th>Horas Restantes</th>
-                                    <th>Estado</th>
+                                    <th>Tarea </th>
+                                    <th>Proyecto </th>
+                                    <th>Asignado a </th>
+                                    <th>Horas Iniciales Planeadas </th>
+                                    <th>Horas Restantes </th>
+                                    <th>Estado </th>
                                 </tr>
                                 <t t-foreach="doc.child_task_ids" t-as="subtask">
                                     <tr>
@@ -83,14 +84,15 @@
                                 </t>
                              </table>
                          </t>
+                         <br/>
                          <t t-if="doc.material_plan_ids">
-                             <h3>Planificación de Materiales</h3>
+                             <h3>Materiales Planificados</h3>
                              <table class="table table-responsive" name="table_4">
                                 <tr>
-                                    <th>Producto</th>
-                                    <th>Descripción</th>
-                                    <th class="text-right">Cantidad</th>
-                                    <th>Unidad de Medida</th>
+                                    <th>Producto </th>
+                                    <th>Descripción </th>
+                                    <th class="text-right">Cantidad </th>
+                                    <th>Unidad de Medida </th>
                                 </tr>
                                 <t t-foreach="doc.material_plan_ids" t-as="plan">
                                     <tr>
@@ -102,14 +104,15 @@
                                 </t>
                              </table>
                          </t>
+                         <br/>
                          <t t-if="doc.consumed_material_ids">
                              <h3>Materiales Consumidos</h3>
                              <table class="table table-responsive" name="table_5">
                                 <tr>
-                                    <th>Producto</th>
-                                    <th>Descripción</th>
-                                    <th class="text-right">Cantidad</th>
-                                    <th>Unidad de Medida</th>
+                                    <th>Producto </th>
+                                    <th>Descripción </th>
+                                    <th class="text-right">Cantidad </th>
+                                    <th>Unidad de Medida </th>
                                 </tr>
                                 <t t-foreach="doc.consumed_material_ids" t-as="consumed">
                                     <tr>
@@ -121,16 +124,16 @@
                                 </t>
                              </table>
                          </t>
-
+                         <br/>
                         <t t-if="doc.picking_ids">
                              <h3>Requisición de Materiales </h3>
                              <table class="table table-responsive" name="table_6">
                                 <tr>
-                                    <th>Referencia</th>
-                                    <th>Zona de Ubicación Destino</th>
-                                    <th>Fecha de Requisición</th>
-                                    <th>Centro de Costos</th>
-                                    <th>Estatus</th>
+                                    <th>Referencia </th>
+                                    <th>Zona de Ubicación Destino </th>
+                                    <th>Fecha de Requisición </th>
+                                    <th>Centro de Costos </th>
+                                    <th>Estatus </th>
                                 </tr>
                                 <t t-foreach="doc.picking_ids" t-as="picking">
                                     <tr>
@@ -144,7 +147,7 @@
                              </table>
                          </t>
                          <t t-if="doc.move_ids">
-                             <h3>Stocks</h3>
+                             <h3>Movimientos de Stocks</h3>
                              <table class="table table-responsive" name="table_7">
                                 <tr>
                                     <th>Tipo de Requisición</th>

@@ -69,7 +69,7 @@ class JobCostLine(models.Model):
         copy=False,
     )
     product_qty = fields.Float(
-        string='Cant. Planeada',
+        string='Cnt. Planeada',
         digits=(16,6),
         copy=False,
     )

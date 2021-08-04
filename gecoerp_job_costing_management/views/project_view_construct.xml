@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="project.edit_project"/>
         <field name="arch" type="xml">
             <xpath expr="//page[last()]" position="after">
-                <page name="construction_sites" string="Construction Site Detail">
+                <page name="construction_sites" string="Detalles del Sitio de Construcción">
                     <group>
                         <group>
                             <field name="type_of_construction"/>
@@ -60,7 +60,7 @@
                          class="oe_highlight" groups="project.group_project_manager" />
              </xpath>
              <xpath expr="//form/sheet/notebook/page[2]" position="after">
-                 <page name="subtasks" string="Subtasks">
+                 <page name="subtasks" string="Subtareas">
                      <field name="child_task_ids" readonly="True" />
                  </page>
              </xpath>

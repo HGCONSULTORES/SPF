@@ -56,7 +56,7 @@ class ConsumedMaterial(models.Model):
     description = fields.Char(
         string='Descripción'
     )
-    product_uom_qty = fields.Integer(
+    product_uom_qty = fields.Float(
         string='Cantidad',
         digits=(16,6),
         default=1.0

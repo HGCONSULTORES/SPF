@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="project.view_task_form2"/>
         <field name="arch" type="xml">
             <xpath expr="//form/sheet/notebook/page[@name='description_page']" position="after">
-                <page string="Material Plannings" name="job_cost_task_material">
+                <page string="Materiales Planificados" name="job_cost_task_material">
                     <field name="material_plan_ids" nolabel="1">
                         <tree editable="bottom">
                             <field name="product_id"/>
@@ -17,7 +17,7 @@
                         </tree>
                     </field>
                 </page>
-                <page string="Consumed Materials" name="job_cost_task_consume_material">
+                <page string="Materiales Consumidos" name="job_cost_task_consume_material">
                     <field name="consumed_material_ids" nolabel="1">
                         <tree editable="bottom">
                             <field name="product_id"/>
@@ -27,7 +27,7 @@
                         </tree>
                     </field>
                 </page>
-                <page name="pickings" string="Material Requisitions" >
+                <page name="pickings" string="Requisición de Materiales" >
                     <field name="picking_ids"  readonly="1" />
                 </page>
             </xpath>
@@ -41,7 +41,7 @@
             </field>
             <xpath expr="//form/sheet/div[@name='button_box']" position="inside">
                  <button class="oe_stat_button" type="object" icon="fa-tasks" name="view_notes">
-                        <field string="Notes" name="notes_count" widget="statinfo" options="{'label_field': 'label_notes'}"/>
+                        <field string="Notas" name="notes_count" widget="statinfo" options="{'label_field': 'label_notes'}"/>
                  </button>
            </xpath>
         </field>
