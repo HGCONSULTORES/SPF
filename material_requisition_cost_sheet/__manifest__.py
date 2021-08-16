@@ -4,7 +4,7 @@
 
 {
     'name': 'Integración de Requisición de Materiales en Hoja de Costos',
-    'version': '2.5',
+    'version': '1.1',
     'currency': 'MX',
     'price': 8700.0,
     'depends': [

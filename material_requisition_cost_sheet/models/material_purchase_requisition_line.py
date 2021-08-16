@@ -8,9 +8,9 @@ class PurchaseRequisitionLine(models.Model):
 
     custom_job_costing_id = fields.Many2one(
         'job.costing',
-        string='Centro de Costos Job Cost Center',
+        string='Centro de Costos',
     )
     custom_job_costing_line_id = fields.Many2one(
         'job.cost.line',
-        string='Costo de Trabajo Job Cost Line',
+        string='Costo de Trabajo',
     )
